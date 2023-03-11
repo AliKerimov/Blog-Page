@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import api from "../API/api";
-export const fetchProducts = createAsyncThunk("posts/", async (endpoint) => {
+export const fetchProducts = createAsyncThunk("/posts", async (endpoint) => {
   try {
     const response = await api.get(endpoint);
     return response.data;
