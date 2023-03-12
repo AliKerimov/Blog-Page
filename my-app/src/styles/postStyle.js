@@ -1,6 +1,5 @@
 import styled from "styled-components";
 export const Container = styled.div`
-  display: flex;
   flex-wrap: wrap;
   margin-top:5%;
 `;
@@ -64,3 +63,8 @@ export const CommentEmail = styled.p`
 export const CommentBody = styled.p`
   margin-bottom: 0;
 `; 
+
+export const Edit=styled.img`
+width:20px;
+cursor:pointer;
+`

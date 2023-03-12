@@ -26,6 +26,8 @@ const Nav = styled.nav`
   top: 0;
   left: 0;
   width: 90%;
+  background-color:gray;
+  border-bottom:1px solid black;
 
   @media (max-width: 768px) {
     // padding: 0 20px;
