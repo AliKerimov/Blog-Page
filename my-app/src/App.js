@@ -1,15 +1,18 @@
-import { Routes,Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Post from "./pages/Post";
 import Posts from "./pages/Posts";
 import CreatePost from "./pages/CreatePost";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div className="App">
-    <Routes>
-       <Route path="/" Component={Posts}/>
-       <Route path="/posts/:id" Component={Post}/>
-       <Route path="/create" Component={CreatePost}/>
-    </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Posts />} />
+        <Route path="/posts/:id" element={<Post />} />
+        <Route path="/posts/create" element={<CreatePost />} />
+      </Routes>
     </div>
   );
 }
