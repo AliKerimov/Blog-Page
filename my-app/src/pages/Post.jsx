@@ -68,6 +68,7 @@ const Post = () => {
                     <CommentCard key={ind}>
                       <CommentName>{comment.name}</CommentName>
                       <CommentEmail>{comment.email}</CommentEmail>
+                      <CommentBody>{comment.title}</CommentBody>
                       <CommentBody>{comment.body}</CommentBody>
                     </CommentCard>
                   );
